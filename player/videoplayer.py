@@ -51,7 +51,7 @@ async def play(client, m: Message):
                     return
             else:
                 livelink = query
-                photoid = "https://telegra.ph/file/b10a65c868444c0611773.jpg"
+                photoid = "https://telegra.ph/file/6a0515e2ba79ae8380a84.jpg"
                 msg = await m.reply_photo(photo=photoid, caption="`Starting Audio Stream...`")
 
             chat_id = m.chat.id
@@ -75,7 +75,7 @@ async def play(client, m: Message):
             umm = await client.download_media(huehue['file_id'])
             photoid = umm
         else:
-            photoid = "https://telegra.ph/file/62e86d8aadde9a8cbf9c2.jpg"
+            photoid = "https://telegra.ph/file/6a0515e2ba79ae8380a84.jpg"
         msg = await m.reply_photo(photo=photoid, caption="`Downloading...`")
         file = await client.download_media(m.reply_to_message)
         chat_id = m.chat.id
